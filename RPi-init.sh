@@ -10,8 +10,6 @@ if ! (date | grep "CET"); then
     sudo dpkg-reconfigure tzdata
 fi
 
-exit
-
 echo -e "\n**  Updating repositories, upgrading packages.\n"
 
 sudo apt-get update
