@@ -38,5 +38,5 @@ sudo raspi-config
 
 echo -e "\n** Done."
 
-echo -w "\n** Rebooting..."
+echo -e "\n** Rebooting..."
 sudo reboot
