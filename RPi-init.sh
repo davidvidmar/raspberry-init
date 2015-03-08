@@ -28,11 +28,11 @@ if [ $? -eq 1 ]; then
    sudo sh -c "sudo cat wifi.txt >> /etc/wpa_supplicant/wpa_supplicant.conf"
 fi 
 
-echo -e "\n** Installing addiotional packages.\n"
+echo -e "\n** Installing additional packages.\n"
 
 sudo apt-get install htop usbmount -y
 
-echo -e "\n** Anything you need to change manually? Hostname, maybe?"
+echo -e "\n** Anything you need to change manually? Hostname maybe?"
 
 sudo raspi-config
 
