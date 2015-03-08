@@ -12,12 +12,12 @@ fi
 
 echo -e "\n**  Updating repositories, upgrading packages.\n"
 
-sudo apt-get update
-sudo apt-get upgrade -y
+#sudo apt-get update
+#sudo apt-get upgrade -y
 
 echo -e "\n** Upgrading firmware.\n"
 
-sudo rpi-update
+#sudo rpi-update
 
 echo -e "\n** Checking Wifi config."
 
@@ -28,7 +28,15 @@ if [ $? -eq 1 ]; then
    sudo sh -c "sudo cat wifi.txt >> /etc/wpa_supplicant/wpa_supplicant.conf"
 fi 
 
+echo -e "\n** Installing addiotional packages.\n"
+
+sudo apt-get install htop usbmount -y
+
+echo -e "\n** Anything you need to change manually? Hostname, maybe?"
+
+sudo raspi-config
+
 echo -e "\n** Done."
 
-echo -w "\n** Rebooting..."
-sudo reboot
+#echo -w "\n** Rebooting..."
+#sudo reboot
