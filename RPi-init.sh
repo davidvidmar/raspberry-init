@@ -12,12 +12,12 @@ fi
 
 echo -e "\n**  Updating repositories, upgrading packages.\n"
 
-#sudo apt-get update
-#sudo apt-get upgrade -y
+sudo apt-get update
+sudo apt-get upgrade -y
 
 echo -e "\n** Upgrading firmware.\n"
 
-#sudo rpi-update
+sudo rpi-update
 
 echo -e "\n** Checking Wifi config."
 
@@ -38,5 +38,5 @@ sudo raspi-config
 
 echo -e "\n** Done."
 
-#echo -w "\n** Rebooting..."
-#sudo reboot
+echo -w "\n** Rebooting..."
+sudo reboot
